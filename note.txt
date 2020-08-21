@@ -1,0 +1,32 @@
+
+#0.3
+yarn, npm : package manager
+
+* 전역 NPM packagedp Gulp 설치해줘야해 -> 콘솔에서 gulp를 쓸거거든
+npm install gulp-cli -g
+
+gulp-cli : helping call 'gulp' from console
+
+(니코는 git init 먼저 함)
+
+띄어쓰기로 새로운 폴더/파일 생성 가능
+* lenux commander
+mkdir : create new folder
+touch (folder/)file.file : create new (folder and) file
+mv <old> <new> : change the file name <old> to <new>
+
+src : 컴파일되기를 원하는 모든 파일들이 들어갈 폴더 (처리되기 전 소스폴더)
+dest : 처리된 파일들이 들어갈 폴더
+src/scss src/js src/img src/partials src/templates
+js/util.js js/main.js
+scss/style.scss scss/_variable.scss scss/_reset.scss
+partials/header.pug partials/footer.pug
+templates/layout.pug
+
+#1.0
+Gulp : 작은 task들을 만들어서 그걸 하나의 명령어나 여러개의 명령어로 묶어서 사용!
+** 하나의 패턴으로 모든 파일이랑 매치시켜야해! (니코는 routes라는 거 만들어서 사용해)
+gulp pug -D : pug tempaltes -> html
+
+src -> pipe -> dest
+
