@@ -114,3 +114,6 @@ parallel : 동시에 task들 병행함
 [IMAGE]
 
 # 3.0
+
+npm install gulp-image
+image는 watch 할지 말지는 신중하게 생각해, 용량 큰것들을 많이 가지고 있다면 오래 걸려서 힘들거야
