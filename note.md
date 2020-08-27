@@ -117,3 +117,23 @@ parallel : 동시에 task들 병행함
 
 npm install gulp-image
 image는 watch 할지 말지는 신중하게 생각해, 용량 큰것들을 많이 가지고 있다면 오래 걸려서 힘들거야
+
+[SCSS]
+
+# 4.0
+
+npm install node-sass gulp-sass -D
+기본적으로 gulp-sass가 node-sass로 sass 파일을 전해주는것
+
+sass.complier = require("node-sass"); //컴파일러로 보냄(?)
+\_filename.scss : sass가 css로 만드는걸 원하지는 않지만, 사용하기는 원하는 파일들.
+
+"(index):1 Refused to apply style from 'http://localhost:8000/css/style.css/' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled." : chrome, safari에서는 괜츈, 근데 또 한번 열고, 새로고침 하지 말고 watch 되서 화면 reload될때는 됨. css link 주고도 절대경로로 바뀜 http://...
+
+# 4.1
+
+gulp-autoprefixer : 호환성 높여주기
+원래 gulpfile에 browser관련 옵션 적어줬었는데, 이젠 package.json 이나. .browserslistrc 파일 생성해서 거기에 작성
+(<https://github.com/browserslist/browserslist#readme>)
+
+gulp-csso : css 파일을 최소화

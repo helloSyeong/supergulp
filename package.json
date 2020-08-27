@@ -8,6 +8,9 @@
   },
   "author": "helloh halloh",
   "license": "ISC",
+  "browserslist": [
+    "last 2 versions"
+  ],
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build"
@@ -20,6 +23,12 @@
     "gulp": "^4.0.2",
     "gulp-image": "^6.2.1",
     "gulp-pug": "^4.0.1",
-    "gulp-webserver": "^0.9.1"
+    "gulp-sass": "^4.1.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1"
   }
 }
