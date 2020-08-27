@@ -153,3 +153,12 @@ javascript를 다루기 위해서 해야할 건 : babel에서 실행시켜야 �
 
 babel 사용할 때 사용하는 언어?에 따라 프리셋이 다르게 필요할 수 있어.
 예를 들어 react를 쓴다면 프리셋도 react preset도 추가해줘야해 babelify.configure({presets: [ "preset1", "react preset", ...]})
+
+[DEPLOY]
+
+# 6.0
+
+ghpage url : github-name.github.io/branchname
+ex) helloSyeong.github.io/supergulp
+
+git remote -v : check git url

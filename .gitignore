@@ -1,6 +1,7 @@
 node_modules/
 
 note.txt
+note.md
 
 # dotenv envieronment variables file
 .envieronment
