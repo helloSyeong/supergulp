@@ -137,3 +137,19 @@ gulp-autoprefixer : 호환성 높여주기
 (<https://github.com/browserslist/browserslist#readme>)
 
 gulp-csso : css 파일을 최소화
+
+[BABEL SUPPORT]
+
+# 5.0
+
+javascript를 다루기 위해서 해야할 건 : babel에서 실행시켜야 하며 browserify에서 실행시켜야해
+
+"Browserify" : Browserify is an open-source JavaScript tool that allows developers to write Node.js-style modules that compile for use in the browser. (from google)
+개발자들이 브라우저에서 Node.js 스타일의 모듈을 사용하기 위한 오픈 소스 JS툴
+-> 브라우저는 기본적으로 import, export등이 뭔지 몰라. browserify가 그걸 이해할수 있게 도와줘 : 그래서 '최신'스크립트를 browserify를 import하고 그 안에 babel 를 실행시켜야해
+: browserify 더이상 유지보수 하지 않음. gulp-bro로 고고싱
+
+? boilerplate
+
+babel 사용할 때 사용하는 언어?에 따라 프리셋이 다르게 필요할 수 있어.
+예를 들어 react를 쓴다면 프리셋도 react preset도 추가해줘야해 babelify.configure({presets: [ "preset1", "react preset", ...]})
